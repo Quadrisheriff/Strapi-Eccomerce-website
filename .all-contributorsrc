@@ -1,0 +1,60 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "phproberto",
+      "name": "Roberto Segura",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1119272?v=4",
+      "profile": "http://phproberto.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "benmp",
+      "name": "benmp",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/9081154?v=4",
+      "profile": "https://github.com/benmp",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jd4no",
+      "name": "Joey Defourneaux",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/15043675?v=4",
+      "profile": "https://github.com/jd4no",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "shime",
+      "name": "Hrvoje Šimić",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/703563?v=4",
+      "profile": "https://shime.sh",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "alexphi",
+      "name": "Alejandro Figueroa",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/7116453?v=4",
+      "profile": "https://alejof.dev",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "jekyll-starter-tailwind",
+  "projectOwner": "taylorbryant",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
