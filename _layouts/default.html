@@ -1,12 +1,33 @@
 ---
 ---
 
-{% include header.html %}
-
-<main
-  class="bg-indigo-500 flex h-screen items-center justify-center w-full"
->
-  {{ content }}
-</main>
-
-{% include footer.html %}
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="flex flex-col h-screen">
+        {% include header.html %}
+        <div class="flex-grow mx-2 mt-5 lg:mx-20">{{ content }}</div>
+        {% include footer.html %}
+      </div>
+    </section>
+  </body>
+  <script
+    async
+    src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"
+  ></script>
+  <div
+    id="snipcart"
+    data-config-modal-style="side"
+    data-api-key="OTM3NDkyMzEtOTgyNy00Zjg1LWFlNzQtODUzOTg5MzkwZTQyNjM3NjU5NjE0MzM1ODk4NTg0"
+    hidden
+  ></div>
+</html>

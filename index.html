@@ -2,4 +2,71 @@
 layout: default
 ---
 
-<h1 class="text-white text-4xl font-semibold">Jekyll Starter Tailwind</h1>
+<div>
+  <div
+    class="
+      container
+      flex flex-col
+      px-6
+      py-4
+      mx-auto
+      space-y-6
+      md:h-128
+      md:py-16
+      md:flex-row
+      md:items-center
+      md:space-x-6
+    "
+  >
+    <div class="flex flex-col items-center w-full md:flex-row md:w-1/2">
+      <div class="max-w-lg md:mx-12 md:order-2">
+        <h1
+          class="
+            text-3xl
+            font-medium
+            tracking-wide
+            text-gray-800
+            dark:text-white
+            md:text-4xl
+          "
+        >
+          The best personal online shop
+        </h1>
+        <p class="mt-4 text-gray-600">
+          Shop for your personal effects at the Strapi eccomerce online tutorial
+          store. We sell only the best products with the best qualities.
+        </p>
+        <div class="mt-6">
+          <a
+            href="#"
+            class="
+              block
+              px-3
+              py-2
+              font-semibold
+              text-center text-white
+              transition-colors
+              duration-200
+              transform
+              bg-blue-500
+              rounded-md
+              md:inline
+              hover:bg-blue-900
+            "
+            >Make your first purchase</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center w-full h-96 md:w-1/2">
+      <img
+        class="object-cover w-full h-full max-w-2xl rounded-md"
+        src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80"
+        alt="apple watch photo"
+      />
+    </div>
+  </div>
+  {% include bestsellers.html %}
+  {% include weekenddeals.html %}
+</div>   

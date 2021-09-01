@@ -1,0 +1,62 @@
+<div>
+  <div class="bg-white">
+    <div
+      class="max-w-2xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8"
+    >
+      <div class="flex justify-center w-full mb-20">
+        <h1 class="text-4xl font-bold text-blue-900">Best sellers</h1>
+      </div>
+
+      {%- for bestseller in strapi.collections.bestsellers -%}
+      <div
+        class="
+          grid grid-cols-1
+          gap-y-10
+          sm:grid-cols-2
+          gap-x-6
+          lg:grid-cols-3
+          xl:grid-cols-4
+          xl:gap-x-8
+        "
+      >
+        {%- for item in bestseller.products -%}
+        <a
+          key="{item.id}"
+          href="/product{{ item.slug | relative_url }}"
+          class="group mb-10"
+        >
+          <div
+            class="
+              w-full
+              aspect-w-1 aspect-h-1
+              bg-gray-200
+              rounded-lg
+              overflow-hidden
+              xl:aspect-w-7 xl:aspect-h-8
+            "
+          >
+            <img
+              src="http://localhost:1337{{ item.Image.url }}"
+              alt="{item.id}"
+              class="
+                w-full
+                h-60
+                object-center object-cover
+                group-hover:opacity-75
+              "
+            />
+          </div>
+          <h3 class="text-center mt-4 text-sm text-gray-700">
+            {{ item.name }}
+          </h3>
+          <p class="text-center mt-1 text-lg font-medium text-gray-900">
+            ${{ item.price }}
+          </p>
+        </a>
+
+        {%- endfor -%}
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>

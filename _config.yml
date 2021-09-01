@@ -1,6 +1,9 @@
 title: Tailwind Jekyll Starter Kit
 description: A starter kit for using Tailwind with Jekyll
 
+plugins:
+  - jekyll-strapi
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -13,3 +16,25 @@ exclude:
   - src
   - tailwind.config.js
   - netlify.toml
+
+strapi:
+  # Your API endpoint (optional, default to http://localhost:1337)
+  endpoint: http://localhost:1337
+  # Collections, key is used to access in the strapi.collections
+  # template variable
+  collections:
+    # Example for a "bestsellers" collection
+    bestsellers:
+      # Collection name (optional)
+      type: best-sellers
+    weekenddeals:
+      # Collection name (optional)
+      type: weekend-deals
+    products:
+      type: products
+    product:
+      type: products
+      permalink: "/product/:slug/"
+      layout: product.html
+      output: true
+    
